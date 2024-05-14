@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #ffd600;
+  --secondary-color: #0029ff;
+  --accent-color: #025102;
+  --link-color: #0029ff;
+  --text-color: #121212;
+  --gray: rgba(255, 255, 255, 0.4);
+  --dark: #0b0b0b;
+  --orange: #ff671f;
+  --black: #000000;
+  --white: #ffffff;
+
+  --paper-color: var(--dark);
+  --border-color: var(--gray);
+}

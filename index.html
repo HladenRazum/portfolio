@@ -4,8 +4,56 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/main.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: 'var(--primary-color)',
+              secondary: 'var(--secondary-color)',
+              accent: 'var(--accent-color)',
+              link: 'var(--link-color)',
+              text: 'var(--text-color)',
+              paper: 'var(--paper-color)',
+            },
+            fontFamily: {
+              sans: ['Roboto', 'Arial', 'Helvetica', 'sans-serif'],
+            },
+          },
+        },
+      }
+    </script>
   </head>
-  <body>
-    <h1>Portfolio website</h1>
+  <body class="bg-black text-white font-sans">
+    <nav class="border-b w-full">
+      <div class="container m-auto flex justify-between py-7">
+        <span>Logo</span>
+        <ul class="flex gap-5">
+          <li><a class="text-link" href="#">Projects</a></li>
+          <li><a class="text-link" href="#">About Me</a></li>
+          <li><a class="text-link" href="#">Contacts</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- <div class="mt-[80px]"></div> -->
+
+    <header class="bg-blue-200 h-screen bg-paper">
+      <h1>Header</h1>
+    </header>
+    <main class="h-screen">
+      <h2 class="text-3xl">About me</h2>
+    </main>
+    <section class="bg-paper h-screen">
+      <h2 class="text-3xl">Projects</h2>
+    </section>
+    <footer class="h-[400px] bg-primary"></footer>
   </body>
 </html>
